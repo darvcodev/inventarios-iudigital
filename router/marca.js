@@ -13,7 +13,7 @@ router.get("/", [validarJWT, validarRolAdmin], async function (req, res) {
     res.send(marcas);
   } catch (error) {
     console.log(eror);
-    res.status(500).send("Ocurrio un error");
+    res.status(500).send("Ocurrio un error al consultar marcas");
   }
 });
 
